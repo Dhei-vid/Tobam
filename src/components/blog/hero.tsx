@@ -11,9 +11,11 @@ const BlogHero = () => {
       src={BG}
     >
       <div
-        className={"flex flex-col items-center justify-center p-12 text-white"}
+        className={
+          "flex flex-col gap-3 items-center justify-center p-20 h-[25rem] text-white"
+        }
       >
-        <h1 className={"text-2xl"}>
+        <h1 className={"text-4xl font-bold text-center"}>
           Stay Ahead Of The Curve: Stay Informed With Our Blog For The Latest
           Industry Insights
         </h1>

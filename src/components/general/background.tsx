@@ -45,7 +45,7 @@ const LazyBackground: FC<ILazyBackground> = ({
           left: 0,
           width: "100%",
           height: "25rem",
-          backgroundColor: "rgba(0, 0, 0, 0.4)",
+          backgroundColor: "rgba(0, 0, 0, 0.6)",
           zIndex: 1,
         }}
       ></div>

@@ -8,7 +8,12 @@ interface IBlogBody {
 const BlogBody: FC<IBlogBody> = ({ body }) => {
   const plainText = convert(body);
 
-  return <div>{plainText}</div>;
+  return (
+    <div>
+      <div>{plainText}</div>
+      <div className="my-5">{body}</div>
+    </div>
+  );
 };
 
 export default BlogBody;

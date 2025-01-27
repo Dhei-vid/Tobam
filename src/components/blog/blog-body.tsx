@@ -3,6 +3,7 @@ import { useEffect, useState } from "react";
 import BlogCard from "./blog-card";
 import { getBlog } from "@/common/util";
 import Button from "../general/button";
+import NewsLetter from "../general/newsletter";
 
 const BlogMain = () => {
   const [blogs, setBlogs] = useState([]);
@@ -61,6 +62,10 @@ const BlogMain = () => {
         >
           <p>Load More</p>
         </Button>
+
+        <div className={"w-full mt-12"}>
+          <NewsLetter />
+        </div>
       </div>
     </div>
   );
