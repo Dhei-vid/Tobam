@@ -13,12 +13,16 @@ interface IBlogHeader {
 const BlogHeader: FC<IBlogHeader> = ({ title, date, tag, cover }) => {
   return (
     <div className={"flex flex-col gap-3 w-full"}>
-      <Tag text={tag} />
-      <p>{title}</p>
+      <div className={"w-fit"}>
+        <Tag text={tag} bgColor={"bg-slate-100/50"} />
+      </div>
+      <p className={"font-semibold text-3xl"}>{title}</p>
       <p>{date}</p>
       <Image
         src={cover || DefaultImg}
-        className={"w-full h-[30rem] object-cover rounded"}
+        className={
+          "w-full h-[28rem] object-cover rounded border-[1px] border-slate-200"
+        }
         alt={`${title} image`}
         width={500}
         height={500}
